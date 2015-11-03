@@ -3,7 +3,7 @@ require 'active_support/all'
 class Hash
   # Search for key path in hash
   #
-  # == Examples
+  # Examples
   #
   #   { a: { b: :c } }.dig(:a, :b) # => :c
   #   { a: { 'b' => :c } }.dig(:a, :b) # => :c
@@ -16,7 +16,7 @@ class Hash
 
   # Search the Hash deeply for all values matching the +key+.
   #
-  # == Examples
+  # Examples
   #
   #   { a: :b, c: { a: '1', d: :e } }.values_for('a') # => [:b, '1']
   def values_for(key)
